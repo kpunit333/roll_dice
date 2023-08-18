@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./roll-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="roll.css">
+
+    <title>Game | Roll the dice</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-comp nav-head">
+
+            <img src="roll-logo-img-1.png" alt="logo" id="logoimg" width="120px">
+
+        </div>
+
+        <div class="nav-comp nav-tab">
+
+            <a href="/" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+
+        </div>
+
+    </nav>
+
+    <div class="roll-the-dice-game">
+
+        <details class="game-details">
+            <summary>How to play ?</summary>
+            <li>Active player can click the roll the dice.</li>
+            <li>Points scored is added to current value of active player.</li>
+            <li>A player can hold his/her score anytime before dice shows 1.</li>
+            <li>If the dice shows 1 current progess becomes 0 and turn passes to opposition player</li>
+        </details>
+
+        <div class="game-roll-screen-container">
+
+            <div class="game-roll-screen">
+
+                <div class="game-player-screen player1-screen">
+
+                    <div class="score-board-upper">
+
+                        <h3>PLAYER 1</h3>
+                        <h1 id="player1-total">0</h1>
+
+                    </div>
+
+                    <div class="score-board-lower">
+
+                        <div class="game-lower-box player1-lower-screen">
+                            <h3>CURRENT</h3>
+                            <h3 id="player1-score">0</h3>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="game-mid-screen">
+
+                    <button class="mid-btn reset-btn">Reset</button>
+
+                    <div class="roll-img-box">
+
+                        <img src="./dice-face-1.png" alt="" id="rolling-dice-img" width="100%">
+                        <!-- <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3265344/red-dice-1-02-two-icon-md.png" alt="" id="rolling-dice-img" width="100%"> -->
+
+                    </div>
+
+                    <button class="mid-btn roll-btn">Roll the dice</button>
+                    <button class="mid-btn hold-btn">Hold</button>
+
+                </div>
+
+                <div class="game-player-screen player2-screen">
+
+                    <div class="score-board-upper">
+
+                        <h3>PLAYER 2</h3>
+                        <h1  id="player2-total">0</h1>
+
+                    </div>
+
+                    <div class="score-board-lower">
+
+                        <div class="game-lower-box player2-lower-screen">
+                            <h3>CURRENT</h3>
+                            <h3 id="player2-score">0</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="roll.js"></script>
+
+</html>
